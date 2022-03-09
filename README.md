@@ -20,7 +20,9 @@
 - consul joiin [SERVER_IP]
 - consul acl bootstrap
 - export CONSUL_HTTP_TOKEN=[TOKEN]
-- consul acl policy create -name [NODE_NAME] -rules [RULES_CONFIG_FILE]
+- consul acl policy create -name [POLICY_NAME] -rules [RULES_CONFIG_FILE]
+- consul acl policy list
+- consul acl token create -description "[DESCRIPTION]" -policy-name [POLICY_NAME]
 
 <hr>
 
